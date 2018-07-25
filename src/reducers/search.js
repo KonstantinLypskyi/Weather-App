@@ -1,4 +1,5 @@
 import { SEARCH_CHANGE_VALUE, SEARCH_FETCH_SUCCESS, CHOISE_CITY, SEARCH_FETCH_LOADING, SEARCH_FETCH_ERROR, LOADING_CITIES } from '../constants'
+import { capitalizeFirstLetter } from '../helpers'
 
 const initialState = {
     loading: false,
@@ -13,7 +14,7 @@ export default (state = initialState, action) => {
         case SEARCH_CHANGE_VALUE:
             return { ...state, value: action.value }
         case LOADING_CITIES:
-            return { ...state, cities: state.data.filter(item => state.value.length >= 3 ? item.name.includes(state.value) : null) }
+            return { ...state, cities: state.data.filter(item => state.value.length >= 3 ? item.name.includes(capitalizeFirstLetter(state.value)) : null) }
         case SEARCH_FETCH_ERROR:
             return { ...state, error: action.bool }
         case SEARCH_FETCH_LOADING:
