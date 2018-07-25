@@ -1,0 +1,253 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400);* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    font-family: 'Raleway'
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgb(55, 57, 61), rgb(16, 27, 48));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 677px;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.header {
+    padding-top: 25px;
+}
+
+.header-logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 28px;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather__name {
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    font-weight: normal
+}
+
+.weather__change {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather__name-change {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column
+}
+
+.weather__block {
+    display: flex;
+    align-items: center;
+}
+
+.weather__block-icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+.weather__block-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background: #fff;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather__block-text {
+    font-size: 35px;
+    line-height: 50px;
+    border-left: 2px solid #fff;
+    padding-left: 15px;
+}
+
+.weather__temp {
+    font-size: 120px;
+    position: relative;
+    font-family: sans-serif;
+    font-weight: normal
+}
+
+.icon__degree {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.weather__wind-speed {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.weather__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cities__list {
+    border-top: 1px solid #c9c9c9;
+    top: 40px;
+    position: absolute;
+    z-index: 10000;
+    background: white;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.weather__cities {
+    padding: 4px;
+    transition: .4s;
+    cursor: pointer;
+    height: 25px;
+}
+
+.weather__cities:hover {
+    background: #f7f3f3
+}
+
+.weather__input {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    line-height: 40px;
+    font-size: 16px;
+    color: black
+}
+
+.weather__input::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #817f7f
+}
+
+.footer {
+    color: #c9c9c9;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.arrow_wind {
+    font-size: 36px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.map__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.weather__cities-city {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 4px;
+    color: black;
+}
+
+.weather__cities-country {
+    color: #979393;
+    font-size: 14px;
+    margin-top: 2px;
+}.sk-three-bounce {
+    width: 8em;
+    margin: auto;
+    text-align: center;
+  }
+  .sk-three-bounce .sk-child {
+    width: 2em;
+    height: 2em;
+    background-color: #337ab7;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+            animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+  }
+  .sk-three-bounce .sk-bounce-1 {
+    -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+  }
+  .sk-three-bounce .sk-bounce-2 {
+    -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+  }
+  
+  @-webkit-keyframes sk-three-bounce {
+    0%, 80%, 100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    40% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  @keyframes sk-three-bounce {
+    0%, 80%, 100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    40% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
