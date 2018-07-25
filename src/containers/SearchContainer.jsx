@@ -18,9 +18,13 @@ class SearchContainer extends React.Component {
     ReactDOM.findDOMNode(this).contains(event.target) ? null : this.props.choiseCity()
   }
 
+  handleSubmit = event => {
+    event.preventDefault()
+  }
+
   render() {
     return (
-      <Search { ...this.props } />
+      <Search { ...this.props } handleSubmit={this.handleSubmit} />
     )
   }
 }
