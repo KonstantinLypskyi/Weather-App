@@ -42,7 +42,10 @@ export const weatherHasErrored = bool => {
           return response;
         })
         .then(response => response.json())
-        .then(data => dispatch(weatherFetchDataSuccess(data)))
+        .then(data => {
+          dispatch(weatherFetchDataSuccess(data))
+          console.log(data)
+        })
         .catch(() => dispatch(weatherHasErrored(true)));
     }
   }

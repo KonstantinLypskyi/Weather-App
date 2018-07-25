@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { connect } from 'react-redux'
 import { changeValue, searchFetchData, searchCity, choiseCity } from '../actions/search'
 import { weatherFetchData } from '../actions/weather'
+import { capitalizeFirstLetter } from '../helpers'
 import Search from '../components/Search'
 
 class SearchContainer extends React.Component {
@@ -31,7 +32,7 @@ class SearchContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        value: state.search.value,
+        value: capitalizeFirstLetter(state.search.value),
         cities: state.search.cities
     }
 }
