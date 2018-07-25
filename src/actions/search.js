@@ -1,4 +1,4 @@
-import { SEARCH_CHANGE_VALUE, SEARCH_FETCH_ERROR, SEARCH_FETCH_LOADING, SEARCH_FETCH_SUCCESS, CHOISE_CITY, LOADING_CITIES } from '../constants'
+import { SEARCH_CHANGE_VALUE, SEARCH_FETCH_ERROR, SEARCH_FETCH_LOADING, SEARCH_FETCH_SUCCESS, CHOISE_CITY, LOADING_CITIES, FETCH_CITY_LIST } from '../constants'
 
 export const changeValue = value => {
     return {
@@ -44,7 +44,7 @@ export const searchHasErrored = bool => {
     return dispatch => {
       dispatch(searchIsLoading(true))
 
-        fetch('/api/city.list.min.json')
+        fetch(FETCH_CITY_LIST)
         .then(response => {
           if (!response.ok) {
             throw Error(response.statusText);
