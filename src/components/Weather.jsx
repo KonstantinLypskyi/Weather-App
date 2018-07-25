@@ -6,7 +6,7 @@ import ArrowIcon from 'react-icons/lib/fa/long-arrow-right'
 import MapIcon from 'react-icons/lib/fa/map-marker'
 
 const Weather = ({ weather, changeLocation, changeInput, temperature, data }) => {
-  const windAngle = weather.wind.deg
+  const { wind, name } = weather
   const weatherIcon = weather.weather[0].icon
   if (!data.length) {
     return <Spinner />
@@ -17,7 +17,7 @@ const Weather = ({ weather, changeLocation, changeInput, temperature, data }) =>
         <SearchContainer />
       ) : (
         <div className='weather__name-change'>  
-          <h2 className='weather__name'>{weather.name}</h2>  
+          <h2 className='weather__name'>{name}</h2>  
           <span onClick={() => changeLocation()} className='weather__change'>
           <MapIcon size={22} />  Change location
           </span>
@@ -37,7 +37,7 @@ const Weather = ({ weather, changeLocation, changeInput, temperature, data }) =>
         {temperature}
         <div className='icon__degree' />
       </h1>
-      <span className='weather__wind-speed'>Wind {weather.wind.speed}m/s <ArrowIcon className='arrow_wind' style={{transform: `rotate(${windAngle}deg)`}} /></span>
+      <span className='weather__wind-speed'>Wind {wind.speed}m/s <ArrowIcon className='arrow_wind' style={{transform: `rotate(${wind.deg}deg)`}} /></span>
     </div>
   )
 }

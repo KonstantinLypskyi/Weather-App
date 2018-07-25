@@ -7,9 +7,8 @@ import Search from '../components/Search'
 class SearchContainer extends React.Component {
 
   render() {
-    const { value, changeValue, cities, searchCity, weatherFetchData, choiseCity } = this.props
     return (
-      <Search value={value} changeValue={changeValue} cities={cities} searchCity={searchCity} weatherFetchData={weatherFetchData} choiseCity={choiseCity} />
+      <Search { ...this.props } />
     )
   }
 }

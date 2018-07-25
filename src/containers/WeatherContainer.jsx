@@ -12,15 +12,8 @@ class WeatherContainer extends React.Component {
   }
 
   render() {
-    const { weather, changeLocation, changeInput, temperature, data } = this.props
     return (
-      <Weather
-        weather={weather}
-        changeLocation={changeLocation}
-        changeInput={changeInput}
-        temperature={temperature}
-        data={data}
-      />
+      <Weather { ...this.props }/>
     )
   }
 }
