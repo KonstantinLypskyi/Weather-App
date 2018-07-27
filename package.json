@@ -2,11 +2,13 @@
   "name": "webpackest",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://KonstantinLypskyi.github.io/",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
-    "server": "webpack-dev-server --open"
+    "server": "webpack-dev-server --open",
+    "deploy": "gh-pages -d public"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +33,7 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-icons": "^2.2.7",
