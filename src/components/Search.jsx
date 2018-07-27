@@ -6,7 +6,7 @@ const Search = ({ value, changeValue, handleSubmit, cities, searchCity, weatherF
             weatherFetchData(city.id)
             choiseCity()
         }}>
-              <img className='map__icon' src='/images/map_icon.png' alt='icon'/>
+              <img className='map__icon' src='./images/map_icon.png' alt='icon'/>
               <p className='weather__cities-city'>{city.name}</p>
               <p className='weather__cities-country'>{city.country}</p>
             </div>

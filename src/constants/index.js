@@ -10,5 +10,5 @@ export const SEARCH_FETCH_SUCCESS = 'SEARCH_FETCH_SUCCESS'
 export const CHOISE_CITY = 'CHOISE_CITY'
 export const LOADING_CITIES = 'LOADING_CITIES'
 
-export const URL = (id = 703448) => `http://api.openweathermap.org/data/2.5/weather?id=${id}&appid=6551e6958e4bd25b77e1576db38dce38`
-export const FETCH_CITY_LIST = '/api/city.list.min.json'
+export const URL = (id = 703448) => `https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=6551e6958e4bd25b77e1576db38dce38`
+export const FETCH_CITY_LIST = './api/city.list.min.json'
