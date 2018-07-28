@@ -11,12 +11,37 @@ body {
 
 .home {
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(to top, rgb(55, 57, 61), rgb(16, 27, 48));
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 677px;
+}
+
+.anim-appear {
+    opacity: 0.01;
+  }
+   
+.anim-appear.anim-appear-active{
+  opacity: 2;
+  transition: opacity 1s ease-in;
+}
+
+.anim-enter {
+    opacity: 0.01;
+  }
+   
+.anim-enter.anim-enter-active{
+  opacity: 2;
+  transition: opacity 1s ease-in;
+}
+
+.anim-leave {
+    opacity: 0.01;
+  }
+   
+.anim-leave.anim-leave-active{
+  opacity: 2;
+  transition: opacity 1s ease-in;
 }
 
 .flex {
@@ -48,7 +73,8 @@ body {
     font-size: 50px;
     letter-spacing: 1px;
     margin-bottom: 18px;
-    font-weight: normal
+    font-weight: normal;
+    text-align: center;
 }
 
 .weather__change {
