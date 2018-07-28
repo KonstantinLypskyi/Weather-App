@@ -17,33 +17,6 @@ body {
     justify-content: space-between;
 }
 
-.anim-appear {
-    opacity: 0.01;
-  }
-   
-.anim-appear.anim-appear-active{
-  opacity: 2;
-  transition: opacity 1s ease-in;
-}
-
-.anim-enter {
-    opacity: 0.01;
-  }
-   
-.anim-enter.anim-enter-active{
-  opacity: 2;
-  transition: opacity 1s ease-in;
-}
-
-.anim-leave {
-    opacity: 0.01;
-  }
-   
-.anim-leave.anim-leave-active{
-  opacity: 2;
-  transition: opacity 1s ease-in;
-}
-
 .flex {
     display: flex;
 }
@@ -225,6 +198,17 @@ body {
     color: #979393;
     font-size: 14px;
     margin-top: 2px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .weather__form {
+        width: 90%
+    }
+
+    .weather__input {
+        width: 100%
+    }
 }.sk-three-bounce {
     width: 8em;
     margin: auto;
