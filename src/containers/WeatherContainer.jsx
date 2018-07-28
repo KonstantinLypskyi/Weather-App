@@ -1,20 +1,17 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import Weather from '../components/Weather'
-import { searchFetchData } from '../actions/search'
-import { weatherFetchData, changeLocation } from '../actions/weather'
+import React from "react"
+import { connect } from "react-redux"
+import Weather from "../components/Weather"
+import { searchFetchData } from "../actions/search"
+import { weatherFetchData, changeLocation } from "../actions/weather"
 
 class WeatherContainer extends React.Component {
-
   componentDidMount() {
     this.props.searchFetchData()
     this.props.weatherFetchData()
   }
 
   render() {
-    return (
-      <Weather { ...this.props }/>
-    )
+    return <Weather {...this.props} />
   }
 }
 

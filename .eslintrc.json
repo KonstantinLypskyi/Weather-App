@@ -17,7 +17,7 @@
       "no-use-before-define": 0,
       "eol-last": 0,
       "quotes": [0, "single"],
-      "jsx-quotes": [1, "prefer-single"],
+      "jsx-quotes": [0, "prefer-single"],
       "react/jsx-no-undef": 1,
       "react/jsx-uses-react": 1,
       "react/jsx-uses-vars": 1
