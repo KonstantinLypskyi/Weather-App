@@ -44,8 +44,6 @@ export const weatherHasErrored = bool => {
 
     backgroundColor = background[data.weather[0].main.toLowerCase()]
 
-    console.log(data.weather[0].main.toLowerCase())
-
     return {
       type: BACKGROUND_COLOR,
       backgroundColor
