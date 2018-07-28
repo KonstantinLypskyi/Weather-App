@@ -37,7 +37,7 @@ export const changeLocation = () => {
 export const getBackgroundByKey = (data, backgroundColor) => {
   const background = {
     sun: "linear-gradient(to top, #e85a8a, #faae56)",
-    moon: "linear-gradient(to top, #141e30, #243b55)",
+    smoke: "linear-gradient(to top, #141e30, #243b55)",
     clouds: "linear-gradient(to top, #757f9a, #d7dde8)",
     haze: "linear-gradient(to top, #37393d, #101b30)",
     dust: "linear-gradient(to top, #4ca1af, #c4e0e5)",
