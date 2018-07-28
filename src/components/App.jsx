@@ -1,16 +1,17 @@
 import React from 'react'
 
-import Header from './Header'
 import WeatherContainer from '../containers/WeatherContainer'
+import PageBackground from '../containers/PageBackground'
+import Header from './Header'
 import Footer from './Footer'
 
 const App = () => {
     return (
-        <div className='home'>
+        <PageBackground>
           <Header />
           <WeatherContainer />
           <Footer />
-        </div>
+        </PageBackground>
     )
 }
 
