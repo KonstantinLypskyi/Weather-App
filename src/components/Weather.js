@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react'
 
-import Spinner from "./Spinner"
-import SearchContainer from "../containers/SearchContainer"
-import ArrowIcon from "react-icons/lib/fa/long-arrow-right"
-import MapIcon from "react-icons/lib/fa/map-marker"
+import Spinner from './Spinner'
+import SearchContainer from '../containers/SearchContainer'
+import ArrowIcon from 'react-icons/lib/fa/long-arrow-right'
+import MapIcon from 'react-icons/lib/fa/map-marker'
 
 const Weather = ({
   weather,
@@ -14,9 +14,11 @@ const Weather = ({
 }) => {
   const { wind, name } = weather
   const weatherIcon = weather.weather[0].icon
+
   if (!data.length) {
     return <Spinner />
   }
+
   return (
     <div className="weather">
       {changeInput ? (
@@ -44,7 +46,7 @@ const Weather = ({
         <div className="icon__degree" />
       </h1>
       <span className="weather__wind-speed">
-        Wind {wind.speed}m/s{" "}
+        Wind {wind.speed}m/s{' '}
         <ArrowIcon
           className="arrow_wind"
           style={{ transform: `rotate(${wind.deg}deg)` }}

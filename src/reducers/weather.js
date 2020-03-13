@@ -5,14 +5,14 @@ import {
     CHANGE_LOCATION,
     CHOISE_CITY,
     BACKGROUND_COLOR
-  } from "../constants"
+  } from '../constants'
   
   const initialState = {
     loading: false,
     error: false,
     changeInputLocation: false,
     temperature: 0,
-    background: "",
+    background: '',
     data: {
       main: {},
       wind: {},
