@@ -5,14 +5,14 @@ import {
     SEARCH_FETCH_LOADING,
     SEARCH_FETCH_ERROR,
     LOADING_CITIES
-  } from "../constants"
+  } from '../constants'
   
   const initialState = {
     loading: false,
     error: false,
     data: [],
     cities: [],
-    value: ""
+    value: ''
   }
   
   export default (state = initialState, action) => {
@@ -34,7 +34,7 @@ import {
       case SEARCH_FETCH_SUCCESS:
         return { ...state, data: action.data }
       case CHOISE_CITY:
-        return { ...state, value: "", cities: [] }
+        return { ...state, value: '', cities: [] }
       default:
         return state
     }

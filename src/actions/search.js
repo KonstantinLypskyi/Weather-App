@@ -6,7 +6,7 @@ import {
   CHOISE_CITY,
   LOADING_CITIES,
   FETCH_CITY_LIST
-} from "../constants"
+} from '../constants'
 
 export const changeValue = value => {
   return {
