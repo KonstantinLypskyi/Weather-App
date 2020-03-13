@@ -8,7 +8,8 @@
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
     "server": "webpack-dev-server --open",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d public",
+    "eslint": "eslint --fix src/"
   },
   "keywords": [],
   "author": "",
@@ -34,12 +35,13 @@
   },
   "dependencies": {
     "gh-pages": "^1.2.0",
+    "gsap": "^3.2.4",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-icons": "^2.2.7",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "^5.3.0",
     "redux": "^4.0.0",
     "redux-devtools-extension": "^2.13.2",
     "redux-thunk": "^2.3.0"
