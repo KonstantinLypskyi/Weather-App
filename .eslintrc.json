@@ -16,7 +16,7 @@
       "no-underscore-dangle": 0,
       "no-use-before-define": 0,
       "eol-last": 0,
-      "quotes": [0, "single"],
+      "quotes": [2, "single"],
       "jsx-quotes": [0, "prefer-single"],
       "react/jsx-no-undef": 1,
       "react/jsx-uses-react": 1,
