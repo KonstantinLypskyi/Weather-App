@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "gh-pages": "^1.2.0",
-    "gsap": "^3.2.4",
+    "gsap": "^3.6.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-icons": "^2.2.7",
